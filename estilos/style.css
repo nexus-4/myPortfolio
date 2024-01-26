@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'primaryFont';
-    src: url(/minhaFonte/minhafonte.ttf); 
+    src: url(../minhaFonte/minhafonte.ttf); 
 }
 @font-face {
     font-family: 'secondFont';
-    src: url(/minhaFonte/NHLSJ___.TTF);
+    src: url(../minhaFonte/NHLSJ___.TTF);
 }
 
 :root {
