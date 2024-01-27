@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'primaryFont';
-    src: url(/minhaFonte/minhafonte.ttf); 
+    src: url(../minhaFonte/minhafonte.ttf); 
 }
 @font-face {
     font-family: 'secondFont';
-    src: url(/minhaFonte/NHLSJ___.TTF);
+    src: url(../minhaFonte/NHLSJ___.TTF);
 }
 
 :root {
@@ -18,8 +18,9 @@
 }
 body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     overflow-x: hidden; /* hide horizontal overflow */
+
     min-width: 100vw;
     z-index: 999;
     background-color: rgb(0, 0, 0);
@@ -58,25 +59,25 @@ header li:hover {
                                             /* estilo da main */
 
 #myName {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     
-    height: 600px;
+    height: 100vh;
     width: 100vw;
 }
 
 #myName h1 {
-    position: relative;
-    top: 200px;
     padding: 10px;
     width: 100vw;
-    font-size: 9em;  
+    font-size: 13em;  
     text-shadow: 1px 1px 20px  rgb(255, 0, 0);
 
     color: #EA3223;
     font-family: 'secondFont';
     text-align: center;
-    
-    
 }
 
                                             /* seccao about me */
