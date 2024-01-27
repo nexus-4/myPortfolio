@@ -46,7 +46,7 @@ header ul {
 }
 header li {
     font-family: 'primaryFont';
-    font-size: 13px;
+    font-size: 20px;
     list-style-type: none;
     margin-right: 20px;
     padding: 5px;
@@ -73,7 +73,7 @@ header li:hover {
     padding: 10px;
     width: 100vw;
     font-size: 13em;  
-    text-shadow: 1px 1px 20px  rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px  rgb(255, 0, 0);
 
     color: #EA3223;
     font-family: 'secondFont';
@@ -84,20 +84,22 @@ header li:hover {
 
 #aboutMe {
     display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
     font-family: 'primaryFont';
 
-    height: 900px;
+    height: 90vh;
     width: 100vw;
 }
 #aboutMetxt {
+    
     position: relative;
     left: 130px;
 
 }
-#aboutMe h2 {
+#aboutMe h1 {
+    font-size: 3em;
     width: 400px;
     padding: 10px;
 
@@ -149,10 +151,11 @@ header li:hover {
 
 #projectDiv {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    height: 900px;
+    height: 100vh;
 }
 
 .item {
@@ -220,7 +223,7 @@ header li:hover {
 
 #contato {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
 
     height: 500px;
@@ -228,6 +231,7 @@ header li:hover {
     font-family: 'primaryFont';
 }
 #contato h1 {
+    font-size: 3em;
     position: relative;
     left: 130px;
 
