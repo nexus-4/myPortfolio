@@ -7,6 +7,10 @@
     font-family: 'secondFont';
     src: url(../minhaFonte/NHLSJ___.TTF);
 }
+@font-face {
+    font-family: 'katibeh';
+    src: url(../minhaFonte/Katibeh-Regular.ttf);
+}
 
 :root {
     color: #EA3223;
@@ -26,7 +30,7 @@ body {
 
     overflow-x: hidden; /* hide horizontal overflow */
     width: 100vw;
-    background-color: #E97895;
+    background-color: #e94252;
     
 }
 
@@ -43,7 +47,7 @@ header {
     z-index: 999;
 }
 header ul {
-   border: 3px solid blue;
+    border: 5px solid blue;
     display: flex;
     justify-self: flex-end;
     align-self: center;
@@ -68,7 +72,7 @@ header li:hover {
 
                                             /* estilo da main */
 main {
-    border: 3px solid blue;
+    border: 5px solid blue;
     border-top: none;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
@@ -80,11 +84,10 @@ main {
     height: 100%;
 }
 #myName {
-    
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
     margin: auto;
     
     height: 100vh;
@@ -92,22 +95,39 @@ main {
 }
 
 #myName h1 {
+    width: fit-content;
     z-index: 2;
     padding: 10px;
-    font-size: 10em;  
+    font-size: 6em;  
     text-shadow: 0px 0px 10px  blue;
 
     color: #0004ff;
     font-family: 'secondFont';
     text-align: center;
 }
+#myName #myIntro {
+    position: relative;
+    top: -100px;
+
+    text-align: justify;
+    font-family: 'kabiteh';
+    font-weight: bold;
+
+    padding: 10px;
+    margin-right: 15px;
+    width: 620.433px;
+    color: blue;
+    border: 5px solid blue;
+    z-index: 2;
+}
+
 
 #circulo {
     box-shadow: 0 0 20px rgb(0, 0, 255);
     z-index: 1;
     position: absolute;
-    left: 20px;
-    top: 50px;
+    left: 50px;
+    top: 220px;
 
     background-color: rgb(64, 0, 255);
     border: none;
@@ -116,6 +136,22 @@ main {
     width: 200px;
     height: 200px;
 }
+#circulo p {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: larger;
+    font-family: 'secondFont';
+    color: blue;
+
+    padding: 10px;
+    border: 5px solid blue;
+
+    position: absolute;
+    left: 112px;
+    top: -167px;
+
+}
+
 
                                             /* seccao about me */
 
