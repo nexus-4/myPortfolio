@@ -201,6 +201,7 @@ main {
 }
 
 .item {
+    z-index: 0;
     margin-top: 30px;
 
     display: flex;
@@ -238,28 +239,39 @@ main {
 
 }
 .codeCheck {
-    font-family: 'secondFont';
+    position: absolute;
+    left: 170px;
+
+    visibility: hidden;
+    display: none;
+    background-color: white;
+    transition: transform .5s ease;
+}
+
+.codeCheck a {
+    padding: 5px;
+    background-color: white;
+
     text-orientation: upright;
     writing-mode: vertical-lr;
-
-    position: relative;
-    left: 70px;
+    text-decoration: none;
+    font-family: 'secondFont';
 }
-
 .item:hover {
-    -webkit-filter: blur(3px);
     filter: blur(3px);
+    z-index: 0;
     box-shadow: 1px 1px 20px 0px blue;
-    
 }
 
-.item:hover p {
-    
+.item:hover .codeCheck {
+    z-index: 9;
+    transform: translateY(-70%);
+    filter: none;
+    visibility: visible;
 }
 
-.item:hover img {
-    
-}
+
+
 
                                             /* estilo de contato */
 
