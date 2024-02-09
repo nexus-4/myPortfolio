@@ -189,85 +189,92 @@ main {
 /* Estilos de projetos */
 
 #projectDiv {
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-    margin-top: 30px;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
 }
 
 .item {
-    z-index: 0;
-    margin-top: 30px;
+  z-index: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
+  width: 250px;
+  position: relative;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    height: 400px;
-    width: 250px;
-    border: 5px solid blue;
-
-    background-color: #ea342300;
+.item::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid blue;
+  background-color: #ea342300;
+  z-index: -1;
 }
 
 .item img {
-    margin: 0;
-    width: 100%;
-    height: 200px;
-    background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
 }
 
 .item p {
-    color: blue;
-    font-size: 14px;
-    font-family: 'kabeteh';
-    font-weight: bolder;
-
-    margin: 0;
-    padding: 10px;
-    text-align: justify;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  color: blue;
+  font-size: 14px;
+  font-family: 'kabeteh';
+  font-weight: bolder;
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.codeCheck {
-    position: absolute;
-    left: 170px;
 
-    visibility: hidden;
-    display: none;
-    background-color: white;
-    transition: transform .5s ease;
+.codeCheck {
+  position: absolute;
+  left: 170px;
+  visibility: hidden;
+  display: none;
+  background-color: white;
+  transition: transform .5s ease;
 }
 
 .codeCheck a {
-    padding: 5px;
-    background-color: white;
-
-    text-orientation: upright;
-    writing-mode: vertical-lr;
-    text-decoration: none;
-    font-family: 'secondFont';
+  padding: 5px;
+  background-color: white;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  font-family: 'secondFont';
 }
+
 .item:hover {
-    filter: blur(3px);
-    z-index: 0;
-    box-shadow: 1px 1px 20px 0px blue;
+  box-shadow: 1px 1px 20px 0px blue
+}
+
+.item:hover>*:not(.codeCheck) {
+  z-index: 0;
+  filter: blur(3px);
+  ;
 }
 
 .item:hover .codeCheck {
-    z-index: 9;
-    transform: translateY(-70%);
-    filter: none;
-    visibility: visible;
+  z-index: 9;
+  transform: translateY(-70%);
+  display: block;
+  visibility: visible;
 }
 
 
