@@ -243,17 +243,17 @@ main {
 }
 
 .codeCheck {
-  position: absolute;
-  left: 170px;
-  visibility: hidden;
-  display: none;
-  background-color: white;
-  transition: transform .5s ease;
+    border: 5px solid blue;
+    position: absolute;
+    left: 170px;
+    visibility: hidden;
+    display: none;
+    background-color: transparent;
+    transition: transform .5s ease;
 }
 
 .codeCheck a {
   padding: 5px;
-  background-color: white;
   text-orientation: upright;
   writing-mode: vertical-lr;
   text-decoration: none;
@@ -272,12 +272,10 @@ main {
 
 .item:hover .codeCheck {
   z-index: 9;
-  transform: translateY(-70%);
+  transform: translateY(-80%);
   display: block;
   visibility: visible;
 }
-
-
 
 
                                             /* estilo de contato */
