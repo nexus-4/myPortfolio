@@ -30,7 +30,7 @@ body {
 
     overflow-x: hidden;
     width: 100vw;
-    background-color: #f95653;
+    background-color: #ec8181;
     
 }
 
@@ -128,11 +128,12 @@ main {
 
 /* estilo do circulo e minhas areas de atuacao */
 #circulo {
+    position: absolute;
+    left: 110px;
+    top: 240px;
+    
     box-shadow: 0 0 20px rgb(0, 0, 255);
     z-index: 1;
-    position: absolute;
-    left: 50px;
-    top: 240px;
 
     background-color: rgb(64, 0, 255);
     border: none;
@@ -173,8 +174,9 @@ main {
 #stacks ul, li img {
     list-style-type: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
 
     margin:10px ;
     width: 60px;
@@ -191,32 +193,36 @@ main {
 #projectDiv {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
   align-items: flex-start;
+  justify-content: space-evenly;
+  
+  height: fit-content;
   margin-top: 30px;
   width: 100%;
-  height: fit-content;
 }
 
 .item {
-  z-index: 0;
-  margin-top: 30px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  
+  position: relative;
+  margin-top: 30px;
   height: 400px;
   width: 250px;
-  position: relative;
+  z-index: 0;
 }
 
 .item::before {
   content: '';
+
   position: absolute;
   top: -5px;
   left: -5px;
   width: 100%;
   height: 100%;
+
   border: 5px solid blue;
   background-color: #ea342300;
   z-index: -1;
@@ -232,11 +238,13 @@ main {
 .item p {
   color: blue;
   font-size: 14px;
-  font-family: 'kabeteh';
   font-weight: bolder;
+  text-align: justify;
+  font-family: 'kabeteh';
+
   margin: 0;
   padding: 10px;
-  text-align: justify;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,11 +252,13 @@ main {
 
 .codeCheck {
     border: 5px solid blue;
+
     position: absolute;
     left: 170px;
-    visibility: hidden;
     display: none;
+    visibility: hidden;
     background-color: transparent;
+
     transition: transform .5s ease;
 }
 
@@ -276,53 +286,7 @@ main {
   display: block;
   visibility: visible;
 }
-
-
-                                            /* estilo de contato */
-
-#contato {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-
-    height: 500px;
-    width: 100vw;
-    font-family: 'primaryFont';
-}
-#contato h1 {
-    font-size: 3em;
-    position: relative;
-    left: 130px;
-
-    display: flex;
-    justify-content: flex-start;
-}
-#contato a img {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; 
-    border-color: black;
-}
-
-#contatoInfo{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: wrap;
-    align-items: center;
-    justify-content: center;
-}
-#contatoInfo a {
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    border-color: black;
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-}
-#contato a img:hover {
-    transform: translate(-3%, -4%);
-}
+                                    
 
 
 
